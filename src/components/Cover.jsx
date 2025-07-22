@@ -3,7 +3,7 @@ export default function Cover() {
         <div className="flex flex-1 w-full px-6 md:px-12 py-12">
         {/* Sidebar - Socials */}
         <div className="md:w-1/6 mb-10 md:mb-0">
-          <div className="space-y-4 text-sm text-gray-600 sticky top-20">
+          <div className="hidden md:block space-y-4 text-sm text-gray-600 sticky top-20">
             <p>📫</p>
             <p>🐦 </p>
             <p>🌐</p>
@@ -25,7 +25,7 @@ export default function Cover() {
             working on dApps, and exploring tokenized economies.
           </p>
         </div>
-        <div className="md:w-1/6 mb-10 md:mb-0">
+        <div className="hidden md:block md:w-1/6 mb-10 md:mb-0">
           <div className="space-y-4 text-sm text-gray-600 sticky top-20">
             <p>📫 roopakmahadane@gmail.com</p>
             <p>🐦 @yourhandle</p>
