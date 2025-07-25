@@ -9,7 +9,6 @@ export default function Home() {
       <Header />
         <Cover className="min-h-screen"/>
         <AboutMe />
-      
     </div>
   );
 }

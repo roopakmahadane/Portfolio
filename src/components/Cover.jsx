@@ -1,6 +1,6 @@
 export default function Cover() {
     return (
-        <div className="flex flex-1 w-full px-6 md:px-12 py-12">
+        <div className="flex min-h-screen flex-1 w-full px-6 md:px-12 py-12">
         {/* Sidebar - Socials */}
         <div className="md:w-1/6 mb-10 md:mb-0">
           <div className="hidden md:block space-y-4 text-sm text-gray-600 sticky top-20">
@@ -11,7 +11,7 @@ export default function Cover() {
         </div>
 
         {/* Main Hero Section */}
-        <div className="md:w-4/6 min-h-screen space-y-4 max-w-4xl pt-20 md:pt-24 mx-auto">
+        <div className="md:w-4/6  space-y-4 max-w-4/5 pt-20 md:pt-36 mx-auto">
           <h1 className="text-xl text-gray-500">Hi, my name is</h1>
           <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
             Roopak Mahadane.
