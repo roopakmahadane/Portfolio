@@ -2,13 +2,15 @@ import "../App.css";
 import Header from "./Header";
 import Cover from "./Cover";
 import AboutMe from "./AboutMe";
+import Projects from "./Projects";
 
 export default function Home() {
   return (
-    <div className="bg-gray-100 min-h-screen font-inter text-gray-800">
+    <div className="bg-[#121212] min-h-screen font-inter text-[##ffffff]">
       <Header />
         <Cover className="min-h-screen"/>
         <AboutMe />
+        <Projects />
     </div>
   );
 }

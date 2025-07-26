@@ -12,14 +12,14 @@ export default function Cover() {
 
         {/* Main Hero Section */}
         <div className="md:w-4/6  space-y-4 max-w-4/5 pt-20 md:pt-36 mx-auto">
-          <h1 className="text-xl text-gray-500">Hi, my name is</h1>
-          <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
+          <h1 className="text-xl text-[#bb86fc]">Hi, my name is</h1>
+          <h2 className="text-5xl md:text-6xl font-bold text-[#ffffff]">
             Roopak Mahadane.
           </h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-gray-600">
+          <h3 className="text-4xl md:text-5xl font-bold text-[#b0b0b0]">
           I like building stuff that excites me.
           </h3>
-          <p className="mt-6 max-w-2/3 text-lg text-gray-700 leading-relaxed ">
+          <p className="mt-6 max-w-2/3 text-lg text-[#b0b0b0] leading-relaxed ">
             I’m an HR Manager by profession but passionate about code, Web3,
             and building decentralized applications. Currently learning Solidity,
             working on dApps, and exploring tokenized economies.

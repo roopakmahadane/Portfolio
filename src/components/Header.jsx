@@ -1,12 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
-  const [scrolldown, setScrollDown] = useState(false);
+  const [scrollDown, setScrollDown] = useState(false);
+  const lastScrollY = useRef(0); 
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollDown(window.scrollY > 10);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+        setScrollDown(true); 
+      } else if (currentScrollY < lastScrollY.current) {
+        setScrollDown(false);
+      }
+      lastScrollY.current = currentScrollY;
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -14,12 +23,13 @@ export default function Header() {
   return (
     <div
       className={
-        "flex font-inter p-5 space-x-80 justify-center items-center sticky top-0 z-50 transition-colors duration-300 ease-in-out" +
-        (scrolldown ? " bg-gray-800 text-white shadow-md backdrop-blur-md bg-opacity-90" : " bg-gray-100 text-black")
+        "flex font-inter p-5 space-x-80 justify-center items-center sticky top-0 z-50 transition-transform duration-500 ease-in-out transform " +
+        (scrollDown ? "-translate-y-full" : "translate-y-0") +
+        " bg-[#121212] text-white"
       }
     >
       <div>
-        <h1 className="text-2xl">RM</h1>
+        <h1 className="text-2xl text-[#bb86fc]">RM</h1>
       </div>
       <div className="flex space-x-4">
         <div><h1>About</h1></div>
