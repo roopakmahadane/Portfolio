@@ -1,16 +1,19 @@
 export default function ProjectCard({src}) {
     return (
         <div className="flex flex-row w-full relative z-0 font-inter">
-            <div className=" w-4/6 h-auto relative drop-shadow-lg ">           
-             <img className="rounded-lg  h-full z-0" src={src} alt="StakeMe"/>
-             <div className="absolute inset-0 bg-[#bb86fc]/30 rounded-lg cursor-pointer hover:bg-transparent transition duration-200 "></div>
+            <div className=" w-full md:block md:w-4/6 relative drop-shadow-lg backdrop-opacity-10 md:backdrop-opacity-100 overflow-visible">           
+             <img className="rounded-lg min-h-80 md:h-full z-0 object-cover" src={src} alt="StakeMe"/>
+             <div className="absolute inset-0 md:bg-[#bb86fc]/30  bg-black/70 bg-opacity-90  rounded-lg cursor-pointer md:hover:bg-transparent transition duration-200 "></div>
             </div>
-            <div className="w-3/6 z-10 absolute right-0 mt-16 ">
-                <h1 className="text-right text-xl text-[#bb86fc]  font-inter">Project</h1>
-                <a href="https://stake-me-pink.vercel.app/"><h1 className="text-right text-[#b0b0b0] text-4xl font-bold pb-4 font-inter">StakeMe</h1></a>
-            <div className="w-full z-10 absolute  right-0 bg-[#1e1e1e] text-white p-5 rounded-lg shadow-lg">
-           <p className="text-right text-lg font-inter text-gray-200 p-2">
+            <div className="w-full md:w-3/6 z-10 absolute md:right-0 mt-4 md:mt-8 lg:mt-16 overflow-visible">
+                <h1 className="text-left ml-7 md:text-right text-xl text-[#bb86fc]  font-inter">Project</h1>
+                <a href="https://stake-me-pink.vercel.app/"><h1 className="text-left ml-7 md:text-right text-[#b0b0b0] text-4xl font-bold pb-4 font-inter">StakeMe</h1></a>
+            <div className="w-full z-10 absolute  right-0 md:bg-[#1e1e1e] text-white p-5 rounded-lg shadow-lg backdrop-opacity-10 md:backdrop-opacity-100">
+           <p className="text-left md:text-right text-lg font-inter text-gray-200 p-2 ">
            StakeMe lets fans invest in creators by buying personal tokens tied to their social presence on Farcaster and Ethereum.
+            </p> 
+            <p className="text-left md:text-right text-lg font-inter text-gray-200 p-2 ">
+           Solidity | React | Hardhat | Tailwind CSS
             </p> 
            </div>
             </div>
