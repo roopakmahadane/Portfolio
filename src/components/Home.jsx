@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 export default function Home() {
   return (
-    <div className="bg-[#121212] min-h-screen font-inter text-[##ffffff]">
+    <div className="bg-[#121212]  font-inter text-[##ffffff]">
       <Header />
         <Cover className="min-h-screen"/>
         <AboutMe />
