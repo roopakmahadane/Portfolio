@@ -4,6 +4,7 @@ import Cover from "./Cover";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
 import MoreProjects from "./MoreProjects";
+import Connect from "./Connect";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <MoreProjects />
+        <Connect />
     </div>
   );
 }
