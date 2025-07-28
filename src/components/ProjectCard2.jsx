@@ -27,7 +27,7 @@ export default function ProjectCard2() {
 
             <div className="w-full md:block md:w-4/6 right-0 absolute drop-shadow-lg z-0   overflow-visible">           
                 <img className="rounded-lg min-h-80 md:h-full object-cover" src="./src/assets/escrowFi.png" alt="StakeMe" />
-                <div className="absolute inset-0 md:bg-[#bb86fc]/80 bg-black/80 bg-opacity-90 rounded-lg cursor-pointer md:hover:bg-transparent transition-all duration-500 ease-in-out"></div>
+                <div className="absolute inset-0 md:bg-[#bb86fc]/50  bg-opacity-90 rounded-lg cursor-pointer md:hover:bg-transparent transition-all duration-500 ease-in-out"></div>
             </div>
         </div>
     );

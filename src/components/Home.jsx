@@ -3,6 +3,7 @@ import Header from "./Header";
 import Cover from "./Cover";
 import AboutMe from "./AboutMe";
 import Projects from "./Projects";
+import MoreProjects from "./MoreProjects";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <Cover className="min-h-screen"/>
         <AboutMe />
         <Projects />
+        <MoreProjects />
     </div>
   );
 }
