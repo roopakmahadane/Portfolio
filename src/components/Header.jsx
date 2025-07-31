@@ -2,14 +2,14 @@ import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
   const [scrollDown, setScrollDown] = useState(false);
-  const lastScrollY = useRef(0); 
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
-        setScrollDown(true); 
+        setScrollDown(true);
       } else if (currentScrollY < lastScrollY.current) {
         setScrollDown(false);
       }
@@ -21,21 +21,36 @@ export default function Header() {
   }, []);
 
   return (
-    <div
+    <header
       className={
-        "flex font-inter p-5 space-x-80 justify-center items-center sticky top-0 z-50 transition-transform duration-500 ease-in-out transform " +
+        "flex justify-between items-center px-4 md:px-10 py-4 w-full top-0 z-50 transition-transform duration-500 ease-in-out transform " +
         (scrollDown ? "-translate-y-full" : "translate-y-0") +
         " bg-[#121212] text-white"
       }
     >
+      {/* Logo */}
       <div>
-        <h1 className="text-2xl bg-[#121212] border border-[#bb86fc] text-[#bb86fc] px-3 py-2 rounded-md">RM</h1>
+        <h1 className="text-2xl border border-[#bb86fc] text-[#bb86fc] px-3 py-2 rounded-md">RM</h1>
       </div>
-      <div className="flex space-x-4 text-[#bb86fc]">
-        <div><h1>About</h1></div>
-        <div><h1>Projects</h1></div>
-        <div><h1>Contact</h1></div>
+
+      {/* Nav Links or Burger */}
+      <div className="flex items-center space-x-4">
+        {/* Burger - visible on small screens */}
+        <div className="md:hidden cursor-pointer">
+          <img
+            src="./src/assets/burger.png"
+            className="h-12 w-12"
+            alt="menu"
+          />
+        </div>
+
+        {/* Nav Items - hidden on small screens */}
+        <div className="hidden md:flex space-x-6 text-[#bb86fc]">
+          <h1>About</h1>
+          <h1>Projects</h1>
+          <h1>Contact</h1>
+        </div>
       </div>
-    </div>
+    </header>
   );
 }
