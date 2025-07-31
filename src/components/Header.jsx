@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 export default function Header() {
   const [scrollDown, setScrollDown] = useState(false);
   const lastScrollY = useRef(0);
+  const [burgerOpen, setBurgerOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,10 +21,11 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+
   return (
-    <header
+    <div
       className={
-        "flex justify-between items-center px-4 md:px-10 py-4 w-full top-0 z-50 transition-transform duration-500 ease-in-out transform " +
+        "flex justify-between items-center px-4 md:px-10 py-4 w-full sticky top-0 z-50 transition-transform duration-500 ease-in-out transform " +
         (scrollDown ? "-translate-y-full" : "translate-y-0") +
         " bg-[#121212] text-white"
       }
@@ -36,7 +38,10 @@ export default function Header() {
       {/* Nav Links or Burger */}
       <div className="flex items-center space-x-4">
         {/* Burger - visible on small screens */}
-        <div className="md:hidden cursor-pointer">
+        <div onClick={() => {setBurgerOpen(prev => !prev)}} className="md:hidden cursor-pointer">
+            {burgerOpen && (
+                <div>Hello</div>
+            )}
           <img
             src="./src/assets/burger.png"
             className="h-12 w-12"
@@ -51,6 +56,6 @@ export default function Header() {
           <h1>Contact</h1>
         </div>
       </div>
-    </header>
+    </div>
   );
 }
