@@ -29,9 +29,9 @@ export default function Header() {
       }
     >
       <div>
-        <h1 className="text-2xl text-[#bb86fc]">RM</h1>
+        <h1 className="text-2xl bg-[#121212] border border-[#bb86fc] text-[#bb86fc] px-3 py-2 rounded-md">RM</h1>
       </div>
-      <div className="flex space-x-4">
+      <div className="flex space-x-4 text-[#bb86fc]">
         <div><h1>About</h1></div>
         <div><h1>Projects</h1></div>
         <div><h1>Contact</h1></div>
