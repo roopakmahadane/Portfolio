@@ -1,3 +1,5 @@
+
+
 export default function Footer(){
 return (
     <div className="flex flex-col items-center justify-center bg-[#121212] text-white p-5 font-inter  mt-40">

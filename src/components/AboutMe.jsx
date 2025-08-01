@@ -1,6 +1,6 @@
 export default function AboutMe(){
 return (
-    <div className="min-h-screen bg-[#121212] p-6 mx-auto max-w-4xl font-inter">
+    <div id="about" className="min-h-screen bg-[#121212] p-6 mx-auto max-w-4xl font-inter flex flex-col justify-center">
         <h1 className="text-3xl font-bold align-center text-[#ffffff] text-center md:text-left mb-4 ">About Me</h1>
         <div className="flex flex-col md:flex-row items-center">
         <div className="max-w-4/5 md:max-w-3/5 mb-6 md:mb-0">

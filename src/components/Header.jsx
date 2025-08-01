@@ -60,9 +60,9 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex space-x-6 text-[#bb86fc]">
-            <h1>About</h1>
-            <h1>Projects</h1>
-            <h1>Contact</h1>
+          <a href="#about" className='cursor-pointer'><h1 className="text-lg ">About</h1></a>
+          <a href="#projects" className='cursor-pointer'><h1 className="text-lg">Projects</h1></a>
+          <a href="#contact" className='cursor-pointer'><h1 className="text-lg">Contact</h1></a>
           </div>
         </div>
       </div>
@@ -80,9 +80,9 @@ export default function Header() {
           burgerOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
-        <h1 className="text-lg cursor-pointer">About</h1>
-        <h1 className="text-lg cursor-pointer">Projects</h1>
-        <h1 className="text-lg cursor-pointer">Contact</h1>
+        <a onClick={() => setBurgerOpen(false)} href="#about"><h1  className="text-lg cursor-pointer">About</h1></a>
+        <a onClick={() => setBurgerOpen(false)} href="#projects"><h1 className="text-lg cursor-pointer">Projects</h1></a>
+        <a onClick={() => setBurgerOpen(false)} href="#contact"><h1 className="text-lg cursor-pointer">Contact</h1></a>
       </div>
     </>
   );
