@@ -2,12 +2,19 @@ export default function Cover() {
     return (
         <div className="flex min-h-screen flex-1 w-full px-6 md:px-12 py-12">
         {/* Sidebar - Socials */}
-        <div className="md:w-1/6 mb-10 md:mb-0">
-          <div className="hidden md:block space-y-4 text-sm text-gray-600 sticky top-20">
-            <p>📫</p>
-            <p>🐦 </p>
-            <p>🌐</p>
+        <div className="md:w-1/6 mb-10 md:mb-0 flex  items-center">
+          <div className="hidden h-full md:block space-y-3 flex flex-row align-center justify-center text-gray-600 sticky top-20">
+          <div className="w-[1px] mx-auto h-1/3 bg-gray-600"></div>
+            <div>
+            <a href="https://github.com/roopakmahadane"><img src="./src/assets/github.png" alt="github" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130 transition ease-in-out duration-300" /></a>
+            </div>
+           <div>
+           <a><img src="./src/assets/x.png" alt="X" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130  transition ease-in-out duration-300" /></a>
+           </div>
+           
+           <div className="w-[1px] mx-auto h-1/3 bg-gray-600"></div>
           </div>
+          
         </div>
 
         {/* Main Hero Section */}
@@ -25,11 +32,15 @@ export default function Cover() {
             working on dApps, and exploring tokenized economies.
           </p>
         </div>
-        <div className="hidden md:block md:w-1/6 mb-10 md:mb-0">
-          <div className="space-y-4 text-sm text-gray-600 sticky top-20">
-            <p>📫 roopakmahadane@gmail.com</p>
-            <p>🐦 @yourhandle</p>
-            <p>🌐 @roopak</p>
+        <div className="hidden md:block md:w-1/6 mb-10 md:mb-0 flex ">
+          <div className="space-y-4 h-full w-full flex flex-col items-center  text-gray-600 ">
+          <div className="w-[1px] mx-auto h-1/3 bg-gray-600 "></div>
+          <a href="mailto:roopak.mhdn@gmail.com">
+          <p className="[writing-mode:vertical-rl] mt-20 [letter-spacing:5px] hover:text-[#bb86fc] transition ease-in-out duration-200 cursor-pointer">
+          roopak.mhdn@gmail.com
+          </p>
+          </a>
+    
           </div>
         </div>
       </div>
