@@ -1,4 +1,4 @@
-import xLogo from "./src/assets/x.png";
+import xLogo from "../assets/x.png";
 
 export default function Cover() {
     return (

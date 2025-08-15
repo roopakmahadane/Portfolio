@@ -1,4 +1,4 @@
-import stakeMe from "./src/assets/stakeMe.png"
+import stakeMe from "../assets/stakeMe.png"
 
 export default function ProjectCard1() {
     return (
