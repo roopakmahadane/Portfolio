@@ -1,8 +1,10 @@
+import stakeMe from "./src/assets/stakeMe.png"
+
 export default function ProjectCard1() {
     return (
         <div className="flex flex-row w-full relative z-0 font-inter">
             <div className=" w-full md:block md:w-4/6 relative drop-shadow-lg backdrop-opacity-10 md:backdrop-opacity-100 overflow-visible">           
-             <img className="rounded-lg min-h-80 md:h-full z-0 object-cover" src="./src/assets/stakeMe.png" alt="StakeMe"/>
+             <img className="rounded-lg min-h-80 md:h-full z-0 object-cover" src={stakeMe} alt="StakeMe"/>
              <div className="absolute inset-0 md:bg-[#bb86fc]/30  bg-black/70 bg-opacity-90  rounded-lg cursor-pointer md:hover:bg-transparent transition duration-200 "></div>
             </div>
             <div className="w-full md:w-3/6 z-10 absolute md:right-0 mt-4 md:mt-4 lg:mt-12 overflow-visible">

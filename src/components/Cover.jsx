@@ -1,3 +1,5 @@
+import xLogo from "./src/assets/x.png";
+
 export default function Cover() {
     return (
         <div className="flex min-h-screen flex-1 w-full px-6 md:px-12 py-12">
@@ -9,7 +11,7 @@ export default function Cover() {
             <a href="https://github.com/roopakmahadane"><img src="./src/assets/github.png" alt="github" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130 transition ease-in-out duration-300" /></a>
             </div>
            <div>
-           <a><img src="./src/assets/x.png" alt="X" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130  transition ease-in-out duration-300" /></a>
+           <a href="https://x.com/BtmnRm"><img src={xLogo} alt="X" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130  transition ease-in-out duration-300" /></a>
            </div>
            
            <div className="w-[1px] mx-auto h-1/3 bg-gray-600"></div>
