@@ -1,8 +1,12 @@
+import share from "../assets/share.png";
+import github from "../assets/github.png";
+import commulearn from "../assets/commuLearn.png";
+
 export default function ProjectCard1() {
     return (
         <div className="flex flex-row w-full relative z-0 font-inter ">
             <div className=" w-full md:block md:w-4/6 relative drop-shadow-lg backdrop-opacity-10 md:backdrop-opacity-100 overflow-visible ">           
-             <img className="rounded-lg min-h-80 md:h-full z-0 object-cover" src="./src/assets/commuLearn.png" alt="StakeMe"/>
+             <img className="rounded-lg min-h-80 md:h-full z-0 object-cover" src={commulearn} alt="StakeMe"/>
              <div className="absolute inset-0 md:bg-[#bb86fc]/50  bg-black/80 bg-opacity-90  rounded-lg cursor-pointer md:hover:bg-transparent transition duration-200 "></div>
             </div>
             <div className="w-full md:w-3/6 z-10 absolute md:right-0 mt-4 md:mt-4 lg:mt-12 overflow-visible">
@@ -17,11 +21,11 @@ export default function ProjectCard1() {
             </p> 
             <div className="space-x-2  flex justify-start mt-1 sm:mt-5  md:justify-end">
                 <a target="_blank" href="https://github.com/roopakmahadane/project-commulearn">
-                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src="./src/assets/github.png" alt="github"/>
+                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src={github} alt="github"/>
                 </a>
 
                 <a target="_blank" href="https://clever-pike-b45737.netlify.com/">
-                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src="./src/assets/share.png" alt="github"/>
+                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src={share} alt="github"/>
                 </a>
             </div>
            </div>

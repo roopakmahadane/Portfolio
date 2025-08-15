@@ -1,3 +1,5 @@
+import profile from "../assets/profile.png";
+
 export default function AboutMe(){
 return (
     <div id="about" className="min-h-screen bg-[#121212] p-6 mx-auto max-w-4xl font-inter flex flex-col justify-center">
@@ -24,7 +26,7 @@ return (
         </div>
         </div>
         <div className="max-w-1/3 md:ml-6">
-            <img className="mb-4" src="./src/assets/profile.png" alt="Profile" />
+            <img className="mb-4" src={profile} alt="Profile" />
         </div>
         </div>
     </div>

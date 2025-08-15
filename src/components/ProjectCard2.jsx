@@ -1,3 +1,7 @@
+import logisticEscrow from "../assets/escrowFi.png";
+import share from "../assets/share.png";
+import github from "../assets/github.png";
+
 export default function ProjectCard2() {
     return (
         <div className="flex flex-row w-full bg-[#121212] h-full relative z-0 font-inter mb-20">
@@ -15,10 +19,10 @@ export default function ProjectCard2() {
                     </p>
                     <div className="space-x-2 flex justify-start mt-1 sm:mt-5">
                         <a target="_blank" href="https://github.com/roopakmahadane/Logistic-Escrow">
-                            <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src="./src/assets/github.png" alt="github" />
+                            <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src={github} alt="github" />
                         </a>
                         <a target="_blank" href="https://logistic-escrow-1sb2.vercel.app/">
-                            <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src="./src/assets/share.png" alt="share" />
+                            <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src={share} alt="share" />
                         </a>
                     </div>
                 </div>
@@ -26,7 +30,7 @@ export default function ProjectCard2() {
 
 
             <div className="w-full md:block md:w-4/6 right-0 absolute  z-0   overflow-visible">           
-                <img className="rounded-lg min-h-80 md:h-full object-cover" src="./src/assets/escrowFi.png" alt="StakeMe" />
+                <img className="rounded-lg min-h-80 md:h-full object-cover" src={logisticEscrow} alt="StakeMe" />
                 <div className="absolute inset-0 md:bg-[#bb86fc]/50 bg-black/80  bg-opacity-90 rounded-lg cursor-pointer md:hover:bg-transparent transition-all duration-500 ease-in-out"></div>
             </div>
         </div>

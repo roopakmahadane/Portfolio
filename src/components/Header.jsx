@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import burger from '../assets/burger.png';
 
 export default function Header() {
   const [scrollDown, setScrollDown] = useState(false);
@@ -52,7 +53,7 @@ export default function Header() {
           {/* Burger */}
           <div onClick={() => setBurgerOpen(prev => !prev)} className="md:hidden cursor-pointer">
             <img
-              src="./src/assets/burger.png"
+              src={burger}
               className="h-12 w-12"
               alt="menu"
             />

@@ -1,4 +1,6 @@
 import stakeMe from "../assets/stakeMe.png"
+import share from "../assets/share.png";
+import github from "../assets/github.png";
 
 export default function ProjectCard1() {
     return (
@@ -19,11 +21,11 @@ export default function ProjectCard1() {
             </p> 
             <div className="space-x-2 flex  bottom-0 justify-start mt-1 sm:mt-5  md:justify-end">
                 <a target="_blank" href="https://github.com/roopakmahadane/StakeMe">
-                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src="./src/assets/github.png" alt="github"/>
+                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2 pointer-cursor" src={github} alt="github"/>
                 </a>
 
                 <a target="_blank" href="https://stake-me-pink.vercel.app/">
-                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src="./src/assets/share.png" alt="github"/>
+                <img className="w-4 h-4 md:w-5 md:h-5 inline-block mr-2" src={share} alt="github"/>
                 </a>
             </div>
            </div>      
