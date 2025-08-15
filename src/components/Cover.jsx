@@ -1,4 +1,5 @@
 import xLogo from "../assets/x.png";
+import github from "../assets/github.png";
 
 export default function Cover() {
     return (
@@ -8,7 +9,7 @@ export default function Cover() {
           <div className="hidden h-full md:block space-y-3 flex flex-row align-center justify-center text-gray-600 sticky top-20">
           <div className="w-[1px] mx-auto h-1/3 bg-gray-600"></div>
             <div>
-            <a href="https://github.com/roopakmahadane"><img src="./src/assets/github.png" alt="github" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130 transition ease-in-out duration-300" /></a>
+            <a href="https://github.com/roopakmahadane"><img src={github} alt="github" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130 transition ease-in-out duration-300" /></a>
             </div>
            <div>
            <a href="https://x.com/BtmnRm"><img src={xLogo} alt="X" className="inline-block w-5 h-5 my-2 cursor-pointer hover:scale-130  transition ease-in-out duration-300" /></a>
